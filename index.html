@@ -1,80 +1,91 @@
-
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8" />
-<title>Edward Chase's Design Portfolio</title>
-
-<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
-
-</head>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <title>Edward Chase's Design Portfolio</title>
+      <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+   </head>
 
 <body>
-	<div id="container">
-	
-	<a href="#"><img src="images/logo.png"  /></a>
 
-	  </style>
-	  </head>
-	  <body>
-	  
-	  <div class="topnav">
-		<a class="active" href="#home">Home</a>
-		<a href="#news">About</a>
-		<a href="#contact">Projects</a>
-		<a href="#about">Resume</a>
-	  </div>
-	  
-	 
-	  
-
-	
-	<div id="header">
-		<h1>Hello, I'm Edward Chase.</h1>
-		<img src="images/me.png" style="width:25%"/> 
-		<h2>I design well-crafted mobile and web applications.</h2>
-	  <div id="content">
-		<h3>About Edward Chase</h3>
-		
-		<p>I am an aspiring User Experience Designer with a deep passion for understanding how technology impacts
-			people’s behavior and influences their habits.
-		<h3>My latest work</h3>
-		
-		<p>I’m forever creating design work for both myself as personal projects and freelance work when available. Here’s a few of my most recent works.</p>
-		
-		<div class="portfolio-item">
-			<img src="images/Trvlplan hi-fi.png" style="width:30%"alt="View more info"/>
-		<p class="btn"><a href="#">See more</a></p>
-		</div>
-		
-		<div class="portfolio-item">
-			<img src="images/mentormatch hi-fi.jpg" style="width:30%"alt="View more info" /></a>
-			<p class="btn"><a href="#">See more</a></p>
-		</div>
-		
-		<div class="portfolio-item">
-			<img src="images/FTC redesign hi-fi.jpg"style="width:30%" /></a>
-			<p class="btn"><a href="#">See more</a></p>
-		</div>
-		
-		
-	</div>
-	
-	<div id="footer">
-		
-		
-		<p id="copyright">&copy; Edward Chase</p>
-		<a href="#news">About Me</a>
-		
-		<a href="#contact">Projects
-		</a>
-		
-	</div>
-		
-		<p class="btn"><a href="portfolio.html">View my portfolio</a></p>
-	</div>
-
-	
-	</div>
-
-</body>
+   
+        
+         <!--navigation -->
+      <div id="navbar">
+         <a href="#logo"><img src="images/logo.png" /></a>
+         <ul class="navlist">
+            
+            <li><a class="#" href="#home">Home</a></li>
+            <li><a href="#">About</a></li>
+              <li>
+                 <a href="#">Projects</a>
+                  <ul class="dropdown">
+                     <li> <a href="#"> TrvlPlan</a></li>
+                     <li> <a href="#"> Mentormatch</a></li>
+                     <li> <a href="#"> FTC redesign</a></li>
+                  </ul>
+               </li>
+               <li><a href="#">Resume</a></li>
+         </ul>   
+      </div>
+ 
+      
+           
+         <!--hero image and Caption (under image)-->
+         <div id="hero" class="sectionContainer">
+            <div class="container">
+               <img src="images/me.png">
+               <div id="caption">
+                  <h1>Hello, I'm Edward Chase.</h1>
+                  <p>I design well-crafted mobile and web applications.</p>
+                  <div id="About me">
+                        <h2>About Edward Chase</h2>
+                        <p>I am an aspiring User Experience Designer with a deep passion for understanding how technology impacts
+                           people’s behavior and influences their habits.</p>
+                      </div>
+               </div>
+            </div>
+         </div>
+            <!--Main Content -->
+            <div id="content">
+               
+               <div class="container">
+                     <img src="images/Trvlplan hi-fi.png" style="width:30%"alt="View more info"/>
+                  <div class="content-text">
+                  <h1>TrvlPlan</h1>
+                  <p>TrvlPlan allows you to view and create the inteneraries of you plus others with whom you are traveling with, 
+                     creating a seamless way to coordinate travel plans with multiple people.</p>
+                 <p id="butttn"><a href="#">See more</a></p>
+               </div>
+               </div>
+            
+        
+               <div class="container">
+                  <img src="images/mentormatch hi-fi.jpg" style="width:30%"alt="View more info" />
+                  <div class="content-text">
+                  <h2> Mentormatch </h2>
+                  <p>MentorMatch connects users who are seeking a career change or general guidance within their professional field with mentors. </p>
+                  <p id="button"><a href="#">See more</a></p>
+                  </div>
+               </div>
+               
+               <div class="container">
+                  <img src="images/FTC redesign hi-fi.jpg"style="width:30%" />
+                  <div class="content-text">
+                  <h4> FTC Website </h4>
+                  <p id="button"><a href="#">See more</a></p>
+                  </div>
+               </div>   
+         
+            <!--footer -->
+         <div class="footer" class="container">
+            <p id="copyright">&copy; Edward Chase</p>
+            <a href="#news">About Me</a>
+            <a href="#contact">Projects
+            </a>
+         </div>
+         <p class="footer button"><a href="portfolio.html">View my portfolio</a></p>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+         <script src="index.js" type="text/javascript"></script>
+      </body>
+   </html>

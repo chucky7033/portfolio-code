@@ -1,88 +1,115 @@
-* {
-	box-sizing: border-box;
-}
-
 body {
-	padding: 100px;
-	font-family: Arial;
-}
-#heroGrid {
-	margin: 0px 5%;
-	display: grid;
-	min-height: 500px;
-	height: 70vh;
-	grid-template-rows: 75% 25%;
-	grid-template-columns: 75% 25%;
-	grid-template-areas:
+  font: 16px Helvetica, Arial, Sans-Serif;
+  color: #636363;
+  line-height: 24px;
+  margin: 0;
+  align-content: center;
 }
 
-/* Center website */
-#container {
-	/* display: flex;
-	flex-direction: column;
-	justify-content: center; */
-	max-width: 1100px;
-	background-color: whitesmoke;
-	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+/*hero and caption*/
+.container {
+  width: 960px;
+  margin: 0 auto;
 }
-/* don't do this. this tells every single div in your html to be this way, which is probably not what you want. set it to specific classes. */
-
-/* div {
-	height: 200px;
-	width: 400px;
-	background: black;
-
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	margin-top: -100px;
-	margin-left: -200px;
-} */
-
-h1 {
-	font-size: 50px;
-	word-break: break-all;
+#hero {
+  background-color: #222222;
 }
+#hero .container {
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+  color: white;
+  grid-gap: 40px;
+}
+/*hero and caption end*/
 
-.row {
-	margin: 8px -16px;
+/*main content*/
+.container {
+  width: 1080px;
+  margin: 0 auto;
+}
+#content {
+  background-color: darkgray;
+}
+#content .container {
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+  color: white;
+  grid-gap: 40px;
 }
 
-/* Add padding BETWEEN each column (if you want) */
-.row,
-.row > .column {
-	padding: 8px;
+/*navigation*/
+#navbar {
+  background-color: #3b3b3b44;
+  font-weight: bold;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/* Create four equal columns that floats next to each other */
-.column {
-	float: left;
-	width: 25%;
+.navlist {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
-/* Clear floats after rows */
-.row:after {
-	content: '';
-	display: table;
-	clear: both;
+.navlist li {
+  height: 48px;
+  position: relative;
+  margin-right: 24px;
 }
 
-/* Content */
-.content {
-	background-color: white(130, 148, 130);
-	padding: 10px;
+.navlist li:last-child {
+  margin-right: 0;
+}
+.navlist li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+  padding: 0 16px;
+  height: 100%;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-	.column {
-		width: 50%;
-	}
+.navlist li a:hover {
+  background: black;
+  color: white;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+.dropdown {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+  position: absolute;
+  display: none;
+  width: 200px;
 }
+
+.dropdown li {
+  margin: 0;
+  padding: 0;
+  height: 36px;
+  background: rgb(255, 255, 255);
+}
+
+.dropdown li a {
+  color: black;
+  justify-content: flex-start;
+}
+
+.dropdown li a:hover {
+  background: #555;
+  color: white;
+}
+
+.active {
+  opacity: 0.3;
+}
+
+/*navigation end*/
